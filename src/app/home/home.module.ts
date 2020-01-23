@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { HomePage } from './home.page';
 import { SvgComponent } from '../components/svg/svg.component';
 import { Svg2Directive } from '../components/svg/svg2.directive';
+import { PinchZoomModule } from 'ngx-pinch-zoom';
 
 @NgModule({
   imports: [
@@ -18,7 +19,7 @@ import { Svg2Directive } from '../components/svg/svg2.directive';
         path: '',
         component: HomePage
       }
-    ])
+    ]), PinchZoomModule
   ],
   declarations: [HomePage, SvgComponent, Svg2Directive]
 })
