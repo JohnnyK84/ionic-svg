@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 import { SvgComponent } from '../components/svg/svg.component';
+import { Svg2Directive } from '../components/svg/svg2.directive';
 
 @NgModule({
   imports: [
@@ -19,6 +20,6 @@ import { SvgComponent } from '../components/svg/svg.component';
       }
     ])
   ],
-  declarations: [HomePage, SvgComponent]
+  declarations: [HomePage, SvgComponent, Svg2Directive]
 })
 export class HomePageModule {}

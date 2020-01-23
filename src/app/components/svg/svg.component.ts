@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-svg',
@@ -6,23 +6,15 @@ import { Component, OnInit, ElementRef } from '@angular/core';
   styleUrls: ['./svg.component.scss'],
 })
 export class SvgComponent implements OnInit {
+  @ViewChild('map',{static:true}) map: ElementRef;
 
-  constructor(private elRef: ElementRef) { }
+  constructor(private renderer: Renderer2) { }
 
   ngOnInit() {
-    let y = this.elRef.nativeElement.querySelector('path').addEventListener('(click)', this.addFunction());
-    console.log(y);
-    let x = document.getElementsByTagName('svg');
-    console.log(x[0].children);
-
-    let children = x[0].children;
-
-    console.log("Children", children);
-
-  
+    console.log(this.map);
   }
 
-  addFunction():void {
-      console.log("Clicked" );
+  addFunction() {
+      
   }
 }

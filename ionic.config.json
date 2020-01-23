@@ -1,5 +1,7 @@
 {
   "name": "dynamicSvg",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
