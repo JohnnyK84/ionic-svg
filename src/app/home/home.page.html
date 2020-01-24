@@ -9,6 +9,8 @@
 <ion-content>
   <div id="mapContainer">
     <!-- <object id="svgImg" data="../../assets/svg/new-zealand.svg"></object>-->
-    <app-svg ></app-svg>
+  <pinch-zoom limit-zoom="5" disableZoomControl="never" zoomControlScale="1.5">
+    <app-svg id="svg" appSvg2 #map></app-svg>
+  </pinch-zoom>
   </div>
 </ion-content>

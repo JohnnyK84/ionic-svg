@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 import { SvgComponent } from '../components/svg/svg.component';
-import { Svg2Directive } from '../components/svg/svg2.directive';
+import { Svg2Directive } from './svg2.directive';
 import { PinchZoomModule } from 'ngx-pinch-zoom';
 
 @NgModule({

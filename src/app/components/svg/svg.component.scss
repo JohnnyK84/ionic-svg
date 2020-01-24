@@ -1,7 +1,18 @@
 svg {
-    background-color: yellowgreen;
+    background-color: skyblue;
 }    
 
 .selected {
     fill: red;
+    stroke: yellow;
+}
+
+path {
+    fill: green;
+    stroke: white;
+    stroke-width: 0.5;
+}
+
+text {
+    fill: white;
 }
